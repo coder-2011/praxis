@@ -1,0 +1,21 @@
+{
+  "name": "metacognitive-coding",
+  "interface": {
+    "displayName": "Metacognitive Coding"
+  },
+  "plugins": [
+    {
+      "name": "metacognitive-coding",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/coder-2011/metacognitive-coding.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
