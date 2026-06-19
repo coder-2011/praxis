@@ -1,6 +1,6 @@
 {
   "name": "praxis",
-  "version": "0.1.0+codex.20260619074250",
+  "version": "0.1.0+codex.20260619074759",
   "description": "Always-on praxis reminders for Codex code-writing turns.",
   "author": {
     "name": "Naman Chetwani",
@@ -15,7 +15,7 @@
   "interface": {
     "displayName": "Praxis",
     "shortDescription": "Always-on coding self-checks",
-    "longDescription": "Injects a praxis prompt at session start, every user prompt, and before write-capable tool use.",
+    "longDescription": "Injects a praxis prompt at session start and before write-capable tool use.",
     "developerName": "Naman Chetwani",
     "category": "Productivity",
     "capabilities": ["Lifecycle hooks", "Skills"],

@@ -33,14 +33,6 @@ test('session hook emits praxis context for Codex', () => {
   assert.match(output.hookSpecificOutput.additionalContext, /Collateral Side Effects/);
 });
 
-test('prompt hook emits praxis context for every prompt', () => {
-  const result = runHook('metacognitive-prompt.js', {}, { PLUGIN_DATA: '/tmp/plugin-data' });
-  assert.equal(result.status, 0);
-  const output = JSON.parse(result.stdout);
-  assert.equal(output.hookSpecificOutput.hookEventName, 'UserPromptSubmit');
-  assert.match(output.hookSpecificOutput.additionalContext, /Injection point: user prompt/);
-});
-
 test('pre-tool hook ignores read-only tools', () => {
   const result = runHook('metacognitive-pre-tool.js', { tool_name: 'Read' });
   assert.equal(result.status, 0);
