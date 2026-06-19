@@ -8,4 +8,4 @@ The hook scripts inject the praxis prompt at:
 - `UserPromptSubmit`
 - `PreToolUse` for write/edit/remove-capable tools targeting code/config files
 
-Only the hook infrastructure is included.
+Also ships the `praxis-audit` skill with the same prompt text.

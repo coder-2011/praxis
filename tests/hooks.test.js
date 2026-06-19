@@ -1,7 +1,9 @@
 const assert = require('node:assert');
+const fs = require('node:fs');
 const { spawnSync } = require('node:child_process');
 const test = require('node:test');
 const path = require('node:path');
+const { METACOGNITIVE_PROMPT } = require('../hooks/metacognitive-instructions');
 
 const root = path.join(__dirname, '..');
 
@@ -11,6 +13,14 @@ function runHook(file, payload = {}, env = {}) {
     encoding: 'utf8',
     env: { ...process.env, ...env },
   });
+}
+
+// Reads a skill file and returns only the loaded instruction body.
+function skillBody(skillName) {
+  return fs.readFileSync(path.join(root, 'skills', skillName, 'SKILL.md'), 'utf8')
+    // Strip required skill frontmatter so the comparison covers the prompt text.
+    .replace(/^---\n[\s\S]*?\n---\n?/, '')
+    .trim();
 }
 
 test('session hook emits praxis context for Codex', () => {
@@ -94,4 +104,9 @@ test('pre-tool hook detects code files in patches and package manager writes', (
     tool_input: { command: 'npm install lodash' },
   }, { PLUGIN_DATA: '/tmp/plugin-data' });
   assert.match(JSON.parse(packageManager.stdout).hookSpecificOutput.additionalContext, /write-capable tool use/);
+});
+
+// Verifies the shipped audit skill stays exactly aligned with the hook prompt.
+test('praxis-audit skill body matches hook prompt exactly', () => {
+  assert.equal(skillBody('praxis-audit'), METACOGNITIVE_PROMPT.trim());
 });

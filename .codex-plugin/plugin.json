@@ -1,6 +1,6 @@
 {
   "name": "praxis",
-  "version": "0.1.0",
+  "version": "0.1.0+codex.20260619074250",
   "description": "Always-on praxis reminders for Codex code-writing turns.",
   "author": {
     "name": "Naman Chetwani",
@@ -11,13 +11,14 @@
   "license": "MIT",
   "keywords": ["codex", "hooks", "coding", "metacognition"],
   "hooks": "./hooks/claude-codex-hooks.json",
+  "skills": "./skills/",
   "interface": {
     "displayName": "Praxis",
     "shortDescription": "Always-on coding self-checks",
     "longDescription": "Injects a praxis prompt at session start, every user prompt, and before write-capable tool use.",
     "developerName": "Naman Chetwani",
     "category": "Productivity",
-    "capabilities": ["Lifecycle hooks"],
+    "capabilities": ["Lifecycle hooks", "Skills"],
     "websiteURL": "https://github.com/coder-2011/praxis",
     "defaultPrompt": [
       "Use praxis coding checks."
