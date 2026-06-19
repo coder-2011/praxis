@@ -26,7 +26,7 @@ function writeHookOutput(event, context) {
   }
 
   if (isCodex) {
-    const output = { systemMessage: 'METACOGNITIVE_CODING' };
+    const output = { systemMessage: 'PRAXIS' };
     if (context) {
       output.hookSpecificOutput = {
         hookEventName: event,

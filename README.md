@@ -1,8 +1,8 @@
-# Metacognitive Coding
+# Praxis
 
-Always-on Codex plugin infrastructure for metacognitive coding prompts.
+Always-on Codex plugin infrastructure for praxis prompts.
 
-The hook scripts inject the metacognitive coding prompt at:
+The hook scripts inject the praxis prompt at:
 
 - `SessionStart`
 - `UserPromptSubmit`

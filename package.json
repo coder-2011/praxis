@@ -1,7 +1,7 @@
 {
-  "name": "metacognitive-coding",
+  "name": "praxis",
   "version": "0.1.0",
-  "description": "Always-on metacognitive coding hooks for Codex.",
+  "description": "Always-on praxis hooks for Codex.",
   "license": "MIT",
   "scripts": {
     "test": "node --test tests/*.test.js"

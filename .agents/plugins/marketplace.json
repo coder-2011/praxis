@@ -1,14 +1,14 @@
 {
-  "name": "metacognitive-coding",
+  "name": "praxis",
   "interface": {
-    "displayName": "Metacognitive Coding"
+    "displayName": "Praxis"
   },
   "plugins": [
     {
-      "name": "metacognitive-coding",
+      "name": "praxis",
       "source": {
         "source": "url",
-        "url": "https://github.com/coder-2011/metacognitive-coding.git",
+        "url": "https://github.com/coder-2011/praxis.git",
         "ref": "main"
       },
       "policy": {

@@ -13,17 +13,17 @@ function runHook(file, payload = {}, env = {}) {
   });
 }
 
-test('session hook emits metacognitive context for Codex', () => {
+test('session hook emits praxis context for Codex', () => {
   const result = runHook('metacognitive-activate.js', {}, { PLUGIN_DATA: '/tmp/plugin-data' });
   assert.equal(result.status, 0);
   const output = JSON.parse(result.stdout);
-  assert.equal(output.systemMessage, 'METACOGNITIVE_CODING');
+  assert.equal(output.systemMessage, 'PRAXIS');
   assert.ok(output.hookSpecificOutput.additionalContext.startsWith('This is a note I am giving you before you write code'));
   assert.match(output.hookSpecificOutput.additionalContext, /The best code is the code never written/);
   assert.match(output.hookSpecificOutput.additionalContext, /Collateral Side Effects/);
 });
 
-test('prompt hook emits metacognitive context for every prompt', () => {
+test('prompt hook emits praxis context for every prompt', () => {
   const result = runHook('metacognitive-prompt.js', {}, { PLUGIN_DATA: '/tmp/plugin-data' });
   assert.equal(result.status, 0);
   const output = JSON.parse(result.stdout);

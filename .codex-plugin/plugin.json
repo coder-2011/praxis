@@ -1,26 +1,26 @@
 {
-  "name": "metacognitive-coding",
+  "name": "praxis",
   "version": "0.1.0",
-  "description": "Always-on metacognitive coding reminders for Codex code-writing turns.",
+  "description": "Always-on praxis reminders for Codex code-writing turns.",
   "author": {
     "name": "Naman Chetwani",
     "url": "https://github.com/coder-2011"
   },
-  "homepage": "https://github.com/coder-2011/metacognitive-coding",
-  "repository": "https://github.com/coder-2011/metacognitive-coding",
+  "homepage": "https://github.com/coder-2011/praxis",
+  "repository": "https://github.com/coder-2011/praxis",
   "license": "MIT",
   "keywords": ["codex", "hooks", "coding", "metacognition"],
   "hooks": "./hooks/claude-codex-hooks.json",
   "interface": {
-    "displayName": "Metacognitive Coding",
+    "displayName": "Praxis",
     "shortDescription": "Always-on coding self-checks",
-    "longDescription": "Injects a metacognitive coding prompt at session start, every user prompt, and before write-capable tool use.",
+    "longDescription": "Injects a praxis prompt at session start, every user prompt, and before write-capable tool use.",
     "developerName": "Naman Chetwani",
     "category": "Productivity",
     "capabilities": ["Lifecycle hooks"],
-    "websiteURL": "https://github.com/coder-2011/metacognitive-coding",
+    "websiteURL": "https://github.com/coder-2011/praxis",
     "defaultPrompt": [
-      "Use metacognitive coding checks."
+      "Use praxis coding checks."
     ],
     "brandColor": "#111111"
   }

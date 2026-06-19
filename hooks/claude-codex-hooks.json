@@ -9,7 +9,7 @@
             "command": "command -v node >/dev/null 2>&1 && node \"${CLAUDE_PLUGIN_ROOT}/hooks/metacognitive-activate.js\" || exit 0",
             "commandWindows": "if (Get-Command node -ErrorAction SilentlyContinue) { node \"$env:CLAUDE_PLUGIN_ROOT\\hooks\\metacognitive-activate.js\" }",
             "timeout": 5,
-            "statusMessage": "Loading metacognitive coding prompt..."
+            "statusMessage": "Loading praxis prompt..."
           }
         ]
       }
@@ -22,7 +22,7 @@
             "command": "command -v node >/dev/null 2>&1 && node \"${CLAUDE_PLUGIN_ROOT}/hooks/metacognitive-prompt.js\" || exit 0",
             "commandWindows": "if (Get-Command node -ErrorAction SilentlyContinue) { node \"$env:CLAUDE_PLUGIN_ROOT\\hooks\\metacognitive-prompt.js\" }",
             "timeout": 5,
-            "statusMessage": "Injecting metacognitive coding prompt..."
+            "statusMessage": "Injecting praxis prompt..."
           }
         ]
       }
@@ -36,7 +36,7 @@
             "command": "command -v node >/dev/null 2>&1 && node \"${CLAUDE_PLUGIN_ROOT}/hooks/metacognitive-pre-tool.js\" || exit 0",
             "commandWindows": "if (Get-Command node -ErrorAction SilentlyContinue) { node \"$env:CLAUDE_PLUGIN_ROOT\\hooks\\metacognitive-pre-tool.js\" }",
             "timeout": 5,
-            "statusMessage": "Checking metacognitive coding guard..."
+            "statusMessage": "Checking praxis guard..."
           }
         ]
       }
