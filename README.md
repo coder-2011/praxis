@@ -2,8 +2,7 @@
 
 Always-on Codex plugin infrastructure for metacognitive coding prompts.
 
-This is intentionally prompt-light for now. The hook scripts inject a filler
-placeholder at:
+The hook scripts inject the metacognitive coding prompt at:
 
 - `SessionStart`
 - `UserPromptSubmit`
