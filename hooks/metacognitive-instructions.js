@@ -1,4 +1,6 @@
-const METACOGNITIVE_PROMPT = `The best code is the code never written. Keep in mind that coding agents are spectacular at writing correct code, but not good code. So don't write too many tests for simple corectedness. Only write few, high quality tests, covering edge cases and complicated
+const METACOGNITIVE_PROMPT = `This is a note I am giving you before you write code, so think over what you are going to write, before writing anything
+
+The best code is the code never written. Keep in mind that coding agents are spectacular at writing correct code, but not good code. So don't write too many tests for simple corectedness. Only write few, high quality tests, covering edge cases and complicated
 
 Your main job is to focus very heavily on doing these things. Actively watch out for these failures and make sure that you are not making these mistakes:
 
