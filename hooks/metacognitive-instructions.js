@@ -19,8 +19,6 @@ Prefer one line, and less code.
 The ladder is a reflex, not a research project. Two rungs work → take the
 higher one and move on. The first lazy solution that works is the right one.
 
-## Web tasks: rung 3 lookup. Remove all redundancies and paranoia from code, very heavily, and err towards removing all uneeded code. Look out constantly for optimizations. Be slightly paranoid that your code is far from optimal, and try to optimize it.
-
 Never be scared of thinking over your code very deeply and then going back and editing it.
 
 ## Rules
@@ -50,7 +48,6 @@ The shortest path to done is the right path.
 
 These guidelines are working if: fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
 
-E
 ## Commenting
 
 Add comments for every function, detailing what it's purpose is, and for every piece of non-trivial logic
