@@ -3,4 +3,7 @@
 const { getInstructions } = require('./metacognitive-instructions');
 const { writeHookOutput } = require('./metacognitive-runtime');
 
-writeHookOutput('SessionStart', getInstructions('session start'));
+writeHookOutput(
+  'SessionStart',
+  `Read AGENTS.md before doing anything\n\n${getInstructions('session start')}`,
+);

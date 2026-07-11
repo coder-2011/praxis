@@ -28,7 +28,8 @@ test('session hook emits praxis context for Codex', () => {
   assert.equal(result.status, 0);
   const output = JSON.parse(result.stdout);
   assert.equal(output.systemMessage, 'PRAXIS');
-  assert.ok(output.hookSpecificOutput.additionalContext.startsWith('This is a note I am giving you before you write code'));
+  assert.ok(output.hookSpecificOutput.additionalContext.startsWith('Read AGENTS.md before doing anything'));
+  assert.match(output.hookSpecificOutput.additionalContext, /This is a note I am giving you before you write code/);
   assert.match(output.hookSpecificOutput.additionalContext, /The best code is the code never written/);
   assert.match(output.hookSpecificOutput.additionalContext, /Collateral Side Effects/);
 });
